@@ -13,6 +13,7 @@ html {
 
 body {
   padding: 32px;
+  background-clip: padding-box
 }
 
 p {
@@ -140,7 +141,7 @@ a {
   padding: 12px 32px;
 }
 
-/* 
+/*
 
 HEADER
 
@@ -150,6 +151,7 @@ HEADER
   display: flex;
   flex-wrap: wrap;
   padding: 96px 0;
+/*   height: calc(100vh - 44px) */
 }
 
 .sign-up__info {
@@ -175,12 +177,18 @@ HEADER
   font-size: 16px;
   transform: translateX(1px);
   border-radius: 32px;
+  border-color: rgb(167, 174, 192, 0.3);
   width: 100%;
-  color: ;
+}
+
+
+.sign-up__input:hover {
+    border-color: rgb(167, 174, 192, 1);
 }
 
 .sign-up__input:focus {
-  border: hidden;
+  outline: none;
+  border: 2px solid #6415ff;
 }
 
 .sign-up__btn {
@@ -189,11 +197,11 @@ HEADER
   text-wrap: nowrap;
   width: 160px;
   font-size: 16px;
+  font-weight: 700;
   position: absolute;
   top: 0;
   right: 0;
   transform: translateY(-2px);
-
 }
 
 .sign-up__customers {
@@ -203,8 +211,7 @@ HEADER
 .sign-up__customers--title {
   font-size: 12px;
   font-weight: 700;
-  color: rgb(167, 174, 184);
-  opacity: 0.7;
+  color: rgb(167, 174, 192, 0.8);
 }
 
 .sign-up__logo--wrapper {
