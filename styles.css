@@ -71,24 +71,22 @@ a {
 }
 
 .link__anchor--purple:hover {
-    color: #6415ff;
+  color: #6415ff;
 }
 
-.link__anchor--purple:hover::after{
-    background-color: #6415ff;
-    opacity: 1;
+.link__anchor--purple:hover::after {
+  background-color: #6415ff;
+  opacity: 1;
 }
 
 .link__anchor--white:hover {
-    color: #fff;
+  color: #fff;
 }
 
-.link__anchor--white:hover::after{
-    background-color: #fff;
-    opacity: 1;
+.link__anchor--white:hover::after {
+  background-color: #fff;
+  opacity: 1;
 }
-
-
 
 /* 
   
@@ -140,4 +138,91 @@ a {
 
 .nav__btn {
   padding: 12px 32px;
+}
+
+/* 
+
+HEADER
+
+*/
+
+.sign-up__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 96px 0;
+}
+
+.sign-up__info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.sign-up__title {
+  font-size: 36px;
+}
+
+.sign-up__description {
+  margin: 32px 0;
+}
+
+.sign-up__input--container {
+  position: relative;
+}
+
+.sign-up__input {
+  padding: 20px 192px 20px 32px;
+  font-size: 16px;
+  transform: translateX(1px);
+  border-radius: 32px;
+  width: 100%;
+  color: ;
+}
+
+.sign-up__input:focus {
+  border: hidden;
+}
+
+.sign-up__btn {
+  margin: 8px 8px 8px 0;
+  padding: 16px;
+  text-wrap: nowrap;
+  width: 160px;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-2px);
+
+}
+
+.sign-up__customers {
+  margin: 80px 0 0 0;
+}
+
+.sign-up__customers--title {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(167, 174, 184);
+  opacity: 0.7;
+}
+
+.sign-up__logo--wrapper {
+  margin: 16px 0 0 0;
+  padding-right: 4rem;
+}
+
+.sign-up__logo {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.sign-up__img--wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.sign-up__img {
+  width: 85%;
 }
