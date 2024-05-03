@@ -184,6 +184,7 @@ HEADER
 
 .sign-up__description {
   margin: 32px 0;
+  color: rgb(36, 62, 99)
 }
 
 .sign-up__input--container {
