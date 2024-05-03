@@ -263,6 +263,7 @@ FEATURES
 .section__label {
   font-weight: 700;
   margin-bottom: 20px;
+  letter-spacing: 0.1em;
 }
 
 .features__description {
@@ -404,7 +405,6 @@ STEPS
 .steps__step {
   display: flex;
   margin-top: 32px;
-  
 }
 
 .step__number {
@@ -429,3 +429,95 @@ STEPS
   line-height: 2;
   color: rgb(113, 128, 150);
 }
+
+/* 
+
+VALUES
+
+*/
+
+.values__info {
+  margin-right: 64px;
+  text-align: left;
+  width: 50%;
+}
+
+.info__title {
+  margin-top: 16px;
+  color: #243e63;
+}
+
+.info__description {
+    margin-top: 32px;
+    font-size: 18px;
+    color: rgb(124, 139, 161);
+    font-weight: 500;
+}
+
+.principle {
+    width: 50%;
+    margin: 32px 32px 0 0;
+}
+
+.principle--prof {
+    margin: 32px 0 0;
+}
+
+.principles {
+    display: flex;
+}
+
+.principle__title--wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.principle__img--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(100, 21, 255, 0);
+    border-radius: 50%;
+    background-color: rgb(154, 230, 180);
+    padding: 8px;
+    height: 36px;
+    width: 36px;    
+}
+
+.principle__img--wrapper-prof {
+    border: 1px solid rgba(100, 21, 255, 0);
+    background-color: rgb(254, 178, 178);
+}
+
+
+.principle__title {
+    font-size: 20px;
+    margin-left: 12px;
+    color: #243e63;
+}
+
+.princple__description {
+    margin-top: 16px;
+    color: rgb(113, 128, 150);
+}
+
+.values__button {
+    font-size: 14px;
+    padding: 12px 32px;
+    margin-top: 48px;
+
+}
+
+
+.values__img--wrapper {
+    display: flex;
+align-items: center;
+  width: 50%;
+}
+
+/* 
+
+PRICING 
+
+*/
