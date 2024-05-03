@@ -57,6 +57,11 @@ a {
   transition: all 300ms ease;
 }
 
+h2 {
+font-size: 48px;
+font-weight: 900;
+}
+
 .link__anchor {
   position: relative;
 }
@@ -87,6 +92,10 @@ a {
 .link__anchor--white:hover::after {
   background-color: #fff;
   opacity: 1;
+}
+
+input {
+    border: none;
 }
 
 /* 
@@ -141,16 +150,20 @@ a {
   padding: 12px 32px;
 }
 
+.spacer {
+    height: 100vh;
+    padding: 6rem 0;
+    display: flex;
+}
+
 /*
 
 HEADER
 
 */
 
-.spacer {
+.header__spacer {
     height: calc(100vh - 44px - 6rem);
-    padding: 6rem 0;
-    display: flex;
     align-items: center;
 }
 
@@ -181,11 +194,12 @@ HEADER
   padding: 20px 192px 20px 32px;
   font-size: 16px;
   transform: translateX(1px);
+  border: 2px solid rgb(167, 174, 192, 0.5);
   border-radius: 32px;
-  border-color: rgb(167, 174, 192, 0.4);
   width: 100%;
   height: 68px;
-  opacity: 0.5
+  opacity: 0.5;
+  transition: all 300ms ease;
 }
 
 
@@ -240,3 +254,82 @@ HEADER
 .sign-up__img {
   width: 95%;
 }
+
+
+/* 
+
+FEATURES
+
+*/
+
+.section__label {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.features__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features__description--title {
+    margin-bottom: 24px;
+}
+
+.features__description--subtitle {
+    margin-bottom: 32px;
+    font-size: 18px;
+    width: 60%;
+}
+
+.features__services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__service {
+    display: flex;
+    padding: 32px 8px;
+    margin: 0 16px;
+}
+
+.features__service--wrapper {
+    width: calc(100% / 3);
+}
+
+.features__service--container {
+    padding: 8px 0 0 16px;
+}
+
+.features__service--img-wrapper {
+    padding: 20px;
+    border: 1px solid rgb(167, 174, 192, 0.4);
+    border-radius: 50%;
+}
+
+.features__service--img {
+    height: 24px;
+    width: 24px;
+
+}
+
+.features__service--title {
+    font-size: 24px;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+.features__service--description {
+    padding-top: 16px;
+    line-height: 2;
+    color: #7c8ba1;
+}
+
+/* 
+
+QUALITY WORK
+
+*/
+
