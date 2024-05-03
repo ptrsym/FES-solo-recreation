@@ -13,7 +13,7 @@ html {
 
 body {
   padding: 32px;
-  background-clip: padding-box
+  background-clip: padding-box;
 }
 
 p {
@@ -58,8 +58,8 @@ a {
 }
 
 h2 {
-font-size: 48px;
-font-weight: 900;
+  font-size: 48px;
+  font-weight: 900;
 }
 
 .link__anchor {
@@ -95,7 +95,7 @@ font-weight: 900;
 }
 
 input {
-    border: none;
+  border: none;
 }
 
 /* 
@@ -151,9 +151,9 @@ input {
 }
 
 .spacer {
-    height: 100vh;
-    padding: 6rem 0;
-    display: flex;
+  height: 100vh;
+  padding: 6rem 0;
+  display: flex;
 }
 
 /*
@@ -163,8 +163,8 @@ HEADER
 */
 
 .header__spacer {
-    height: calc(100vh - 44px - 6rem);
-    align-items: center;
+  height: calc(100vh - 44px - 6rem);
+  align-items: center;
 }
 
 .sign-up__container {
@@ -202,9 +202,8 @@ HEADER
   transition: all 300ms ease;
 }
 
-
 .sign-up__input:hover {
-    border-color: rgb(167, 174, 192, 1);
+  border-color: rgb(167, 174, 192, 1);
 }
 
 .sign-up__input:focus {
@@ -255,7 +254,6 @@ HEADER
   width: 95%;
 }
 
-
 /* 
 
 FEATURES
@@ -263,68 +261,67 @@ FEATURES
 */
 
 .section__label {
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .features__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .features__description--title {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .features__description--subtitle {
-    margin-bottom: 32px;
-    font-size: 18px;
-    width: 60%;
+  margin-bottom: 32px;
+  font-size: 18px;
+  width: 60%;
 }
 
 .features__services {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .features__service {
-    display: flex;
-    padding: 32px 8px;
-    margin: 0 16px;
+  display: flex;
+  padding: 32px 8px;
+  margin: 0 16px;
 }
 
 .features__service--wrapper {
-    width: calc(100% / 3);
+  width: calc(100% / 3);
 }
 
 .features__service--container {
-    padding: 8px 0 0 16px;
+  padding: 8px 0 0 16px;
 }
 
 .features__service--img-wrapper {
-    padding: 20px;
-    border: 1px solid rgb(167, 174, 192, 0.4);
-    border-radius: 50%;
+  padding: 20px;
+  border: 1px solid rgb(167, 174, 192, 0.4);
+  border-radius: 50%;
 }
 
 .features__service--img {
-    height: 24px;
-    width: 24px;
-
+  height: 24px;
+  width: 24px;
 }
 
 .features__service--title {
-    font-size: 24px;
-    font-weight: 700;
-    text-wrap: nowrap;
+  font-size: 24px;
+  font-weight: 700;
+  text-wrap: nowrap;
 }
 
 .features__service--description {
-    padding-top: 16px;
-    line-height: 2;
-    color: #7c8ba1;
+  padding-top: 16px;
+  line-height: 2;
+  color: #7c8ba1;
 }
 
 /* 
@@ -333,3 +330,102 @@ QUALITY WORK
 
 */
 
+.quality__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 98px 0;
+}
+
+.quality__info--wrapper {
+  width: 50%;
+}
+
+.quality__info {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 32px 0;
+}
+
+.quality__title {
+  margin-top: 16px;
+}
+
+.quality__description {
+  margin-top: 16px;
+  opacity: 0.75;
+  font-size: 18px;
+}
+
+.quality__btn {
+  width: 142px;
+  margin-top: 32px;
+  padding: 12px 32px;
+  font-size: 14px;
+}
+
+.quality__img-wrapper {
+  width: 50%;
+}
+
+/* 
+
+STEPS
+
+*/
+
+.steps__container {
+  display: flex;
+  align-items: center;
+}
+
+.steps_img--wrapper {
+  width: 50%;
+}
+
+.steps__info {
+  width: 50%;
+  padding: 32px 0;
+  margin-left: 64px;
+}
+
+.steps__title {
+  margin-top: 16px;
+}
+
+.steps__list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 90%;
+}
+
+.steps__step {
+  display: flex;
+  margin-top: 32px;
+  
+}
+
+.step__number {
+  color: rgb(203, 213, 224);
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.steps__step--container {
+  margin-left: 24px;
+}
+
+.steps__step--heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #243e63;
+}
+
+.steps__step--description {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 2;
+  color: rgb(113, 128, 150);
+}
