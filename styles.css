@@ -725,5 +725,20 @@ TESTIMONIALS
 
 */
 
+.testimonials__container {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__img--wrapper {
+    width: 50%;
+}
+
+.testimonials__info {
+    width: 50%;
+}
+
+
+
 .userbtn {  
 }
