@@ -745,6 +745,10 @@ TESTIMONIALS
   margin-top: 30px;
 }
 
+.rating__description {
+    margin: 16px 0 40px;
+}
+
 .user__img--wrapper {
   display: flex;
   align-items: center;
