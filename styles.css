@@ -745,6 +745,13 @@ TESTIMONIALS
   margin-top: 30px;
 }
 
+.rating__heading {
+    margin-top: 16px;
+    font-size: 20px;
+    color: #243e63;
+    font-weight: 700;
+}
+
 .rating__description {
     margin: 16px 0 40px;
 }
