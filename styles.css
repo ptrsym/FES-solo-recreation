@@ -745,6 +745,10 @@ TESTIMONIALS
   margin-top: 30px;
 }
 
+.testimonials__user {
+    margin-top: 40px;
+}
+
 .rating__heading {
     margin-top: 16px;
     font-size: 20px;
