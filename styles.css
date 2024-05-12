@@ -738,6 +738,10 @@ TESTIMONIALS
   margin-left: 48px;
 }
 
+.testimonials__title {
+    margin-top: 16px;
+}
+
 .rating__user--container {
   display: flex;
   align-items: center;
