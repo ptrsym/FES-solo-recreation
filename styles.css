@@ -798,5 +798,10 @@ TESTIMONIALS
   color: #7c8ba1;
 }
 
+.user__buttons--wrapper {
+    display: flex;
+}
+
 .userbtn {
+    margin: 0px 12px;
 }
