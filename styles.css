@@ -16,6 +16,10 @@ body {
   background-clip: padding-box;
 }
 
+button {
+    border: none;
+}
+
 p {
   line-height: 1.5;
 }
@@ -800,8 +804,31 @@ TESTIMONIALS
 
 .user__buttons--wrapper {
     display: flex;
+    align-items: center;
 }
 
 .userbtn {
     margin: 0px 12px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(237, 242, 247);
+    transition: all 300ms ease;
+}
+
+.userbtn:hover {
+    cursor: pointer;
+    filter: brightness(0.97)
+
+}
+
+.btnDivider{
+    background-color: rgba(237, 242, 247);
+    height: 26px;
+    width: 2px;
+}
+
+.btnAccent{
+    background-color: #243e63;
+    height: 14px;
+    width: 1px;
 }
