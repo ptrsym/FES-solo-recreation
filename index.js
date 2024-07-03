@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq__item');
 
+    //toggles FAQ section questions
+    const faqItems = document.querySelectorAll('.faq__item');
     faqItems.forEach(item => {
         item.addEventListener('click', function() {
             
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.toggle('active');
         });
     });
+
 });

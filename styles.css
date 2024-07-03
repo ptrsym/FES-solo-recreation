@@ -730,16 +730,25 @@ TESTIMONIALS
 
 .testimonials__container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .testimonials__img--wrapper {
   width: 45%;
+  position: relative;
+}
+
+.testimonials__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .testimonials__info {
   width: 55%;
   margin-left: 48px;
+  position: relative;
 }
 
 .testimonials__title {
@@ -759,7 +768,11 @@ TESTIMONIALS
 }
 
 .testimonials__user {
-    margin-top: 40px;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+ 
+  margin-top: 40px;
 }
 
 .rating__heading {
