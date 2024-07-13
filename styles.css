@@ -17,7 +17,7 @@ body {
 }
 
 button {
-    border: none;
+  border: none;
 }
 
 p {
@@ -105,6 +105,49 @@ h2 {
 
 input {
   border: none;
+}
+
+.section {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.left {
+  transform: translateX(-100%);
+}
+
+.right {
+  transform: translateX(100%);
+}
+
+.animate-from-left {
+  animation: slideInLeft 0.5s forwards;
+}
+
+.animate-from-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+@keyframes slideInLeft{
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight{
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* 
@@ -334,6 +377,8 @@ FEATURES
   line-height: 2;
   color: #7c8ba1;
 }
+
+
 
 /* 
 
@@ -749,41 +794,77 @@ TESTIMONIALS
   width: 55%;
   margin-left: 48px;
   position: relative;
+  overflow:hidden;
 }
 
 .testimonials__title {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .testimonials__description {
-    margin-top: 24px;
-    font-size: 18px;
+  margin-top: 24px;
+  font-size: 18px;
 }
 
 .rating__user--container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  width: 100%;
 }
 
 .testimonials__user {
   position: absolute;
-  /* top: 0;
-  left: 0; */
- 
   margin-top: 40px;
+  height: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.testimonials__user.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 1;
+ }
+
+.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 1;
+ }
+
+.slide-out-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.testimonials__user--container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .rating__heading {
-    margin-top: 16px;
-    font-size: 20px;
-    color: #243e63;
-    font-weight: 700;
+  margin-top: 16px;
+  font-size: 20px;
+  color: #243e63;
+  font-weight: 700;
 }
 
 .rating__description {
-    margin: 16px 0 40px;
+  margin: 16px 0 40px;
 }
 
 .user__img--wrapper {
@@ -816,34 +897,33 @@ TESTIMONIALS
 }
 
 .user__buttons--wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .userbtn {
-    margin: 0px 12px;
-    padding: 16px;
-    border-radius: 50%;
-    background-color: rgba(237, 242, 247);
-    transition: all 300ms ease;
+  margin: 0px 12px;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: rgba(237, 242, 247);
+  transition: all 300ms ease;
 }
 
 .userbtn:hover {
-    cursor: pointer;
-    filter: brightness(0.97)
-
+  cursor: pointer;
+  filter: brightness(0.97);
 }
 
-.btnDivider{
-    background-color: rgba(237, 242, 247);
-    height: 26px;
-    width: 2px;
+.btnDivider {
+  background-color: rgba(237, 242, 247);
+  height: 26px;
+  width: 2px;
 }
 
-.btnAccent{
-    background-color: #243e63;
-    height: 14px;
-    width: 1px;
+.btnAccent {
+  background-color: #243e63;
+  height: 14px;
+  width: 1px;
 }
 
 /*
@@ -852,31 +932,30 @@ FAQ
 
 */
 
-.faq__container{
+.faq__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.faq__intro{
+.faq__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 576px
+  width: 576px;
 }
 
-.faq-title{
+.faq-title {
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 16px;
 }
 
-.faq-heading{
+.faq-heading {
   font-size: 48px;
-
 }
 
-.faq-subheading{
+.faq-subheading {
   font-size: 18px;
   color: #7c8ba1;
   text-align: center;
@@ -888,7 +967,7 @@ FAQ
   width: 95%;
 }
 
-.faq__item{
+.faq__item {
   padding: 16px 40px;
   margin-top: 20px;
   background-color: #edf2f7;
@@ -898,10 +977,10 @@ FAQ
 
 .faq__item:hover {
   cursor: pointer;
-  background-color: #E1E6EB;
+  background-color: #e1e6eb;
 }
 
-.faq__item--question{
+.faq__item--question {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -910,7 +989,7 @@ FAQ
   font-weight: 600;
 }
 
-.faq__item--answer{
+.faq__item--answer {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
