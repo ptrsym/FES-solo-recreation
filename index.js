@@ -7,20 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     threshold: 0
   };
 
-  sections.forEach((section, index) => {
-    if (index % 2 === 0) {
-        section.classList.add('left');
-    } else {
-        section.classList.add('right');
-    }
-  });
-
   const observer = new IntersectionObserver((entries, observerInstance) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-            if (entry.target.classList.contains('left')) {
+            if (Array.from(sections).indexOf(entry.target) % 2 === 0) {
+                entry.target.classList.contains('left')
                 entry.target.classList.add('animate-from-left');
-            } else if (entry.target.classList.contains('right')) {
+            } else {
+                entry.target.classList.contains('right')
                 entry.target.classList.add('animate-from-right');
             }
             entry.target.classList.add('animated');
