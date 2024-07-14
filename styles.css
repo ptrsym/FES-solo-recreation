@@ -1010,3 +1010,92 @@ FAQ
 .faq__item.active .dropdown-arrow {
   transform: rotate(180deg);
 }
+
+/* 
+
+CONTACT 
+
+*/
+
+.spacer__contact {
+  height: 55vh;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(100 21 255);
+  background-image: url(./assets/background1test.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.contact__container--wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.contact__slogan {
+  width: 50%;
+}
+
+.contact__slogan--text {
+  color: #f7fafc;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.contact__button-wrapper {
+  width: 50%;
+  height: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 64px;
+}
+
+.contact__btn {
+  padding: 1.25rem 2.5rem;
+  flex-grow: 1;
+  font-size: 1.15em;
+  font-weight: 700;
+  border: 1px solid;
+  border-radius: 9999px;
+  height: 100%;
+  text-wrap: nowrap;
+
+}
+
+.contact__btn--orange {
+  margin-right: 32px;
+  color: #edf2f7;
+  background-color: #f56565;
+  border-color: transparent;
+}
+
+.contact__btn--orange:hover {
+  background-color: rgb(229 62 62);
+}
+
+
+.contact__btn--purple {
+  color: #f7fafc;
+  border-color: rgb(160 174 192);
+}
+
+.contact__btn--purple:hover {
+  border-color: rgb(100 21 255);
+  background-color: rgb(247 250 252);
+  color: rgb(100 21 255);
+}
+
+
+
