@@ -1227,10 +1227,9 @@ FOOTER
   background-color: rgb(203, 213, 224);
 }
 
-.facebook__icon {
+.facebook__icon, .twitter__icon {
   margin-right: 1rem;
 }
 
-.twitter__icon {
-  margin-right: 1rem;
-}
+
+
